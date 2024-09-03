@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #192a56;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.View_Completed_Task">
+   <children>
+      <TableView fx:id="tblView" layoutX="16.0" layoutY="89.0" prefHeight="253.0" prefWidth="568.0">
+        <columns>
+          <TableColumn fx:id="colTitle" prefWidth="175.33333778381348" text="Title" />
+            <TableColumn fx:id="colDesc" prefWidth="238.6666717529297" text="Description" />
+            <TableColumn fx:id="colComDate" prefWidth="153.33334350585938" text="Completed Date" />
+        </columns>
+      </TableView>
+      <Label layoutY="-2.0" prefHeight="55.0" prefWidth="600.0" style="-fx-background-color: black;" text="              Completed Task" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="32.0" />
+         </font>
+      </Label>
+      <Button layoutX="272.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnReloadOnAction" style="-fx-background-color: #e1b12c;" text="Reload">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
